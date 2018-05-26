@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<property name="connection.driver_class">org.postgresql.Driver</property>
+<property name="connection.url">jdbc:postgresql://localhost:5432/homesManagements</property>
+<property name="connection.username">postgres</property>
+<property name="connection.password">haslo123</property>
+<!-- SQL dialect -->
+<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+<property name="cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+<property name="hibernate.transaction.coordinator_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+<property name="hibernate.current_session_context_class">thread</property>
+
+
+<property name="hibernate.c3p0.min_size">5</property>
+<property name="hibernate.c3p0.max_size">20</property>
+<property name="hibernate.c3p0.max_statements">50</property>
+<property name="hibernate.c3p0.timeout">300</property>
+<property name="c3p0.idle_test_period">3000</property>
+
+<!-- thread is the short name for org.hibernate.context.ThreadLocalSessionContext -->
+<property name="current_session_context_class">thread</property>
+
+<!-- Set "true" to show SQL statements -->
+<property name="hibernate.show_sql">true</property>
+<property name="hibernate.use_sql_comments">true</property>
+
+
+<!-- mapping class using annotation -->
+
+<mapping class="data.User"></mapping>
+<mapping class="data.Task"></mapping>
+<mapping class="data.Award"></mapping>
+<mapping class="data.Choice"></mapping>
+
+</session-factory>
+
+</hibernate-configuration>

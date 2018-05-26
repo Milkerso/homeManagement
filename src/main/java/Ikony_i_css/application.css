@@ -1,0 +1,102 @@
+.root
+{
+	-fx-background-image: url("red-blue1.png");
+
+}
+.label
+{
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #B0B0B0;
+	
+}
+#formTitle
+{
+	-fx-font-size: 32px;
+	-fx-font-family: "Arial Black";
+	-fx-fill: #EAEAEA;
+	-fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 6, 0.0, 0, 2);
+}
+.button-click
+{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #2C2C2C;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: white;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+.close-button
+{ 
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: white;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+.close-button:hover
+{
+	-fx-background-color: rgba(255, 255, 255, .3);
+}
+.button-click:hover
+{
+	    -fx-background-color: black;
+
+}
+.button-click:pressed
+{
+	-fx-background-color:#3C3C3C;
+		-fx-text-fill: white;
+}
+#notification
+{
+	-fx-fill: #ff9070;
+	-fx-font-weight:bold;
+}
+.userLogin
+{
+	-fx-text-fill:#FAFAFA;
+	-fx-font-size:18px;
+	-fx-font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.userPassword
+{
+	-fx-text-fill:#FAFAFA;
+	-fx-font-size:18px;
+	-fx-font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.pass-field
+{
+	-fx-font-family: "Quicksand";
+   -fx-font-size: 18;
+   -fx-padding: 1,1,1,1;
+   -fx-border-color: white;
+   -fx-border-width: 2;
+   -fx-border-radius: 1;
+   -fx-border: gone;
+   -fx-background-color: transparent;
+   -fx-text-fill: white;
+}
+.login-field
+{
+	-fx-font-family: "Quicksand";
+   -fx-font-size: 18;
+   -fx-padding: 1,1,1,1;
+   -fx-border-color: white;
+   -fx-border-width: 2;
+   -fx-border-radius: 1;
+   -fx-border: gone;
+   -fx-background-color: transparent;
+   -fx-text-fill: white;
+}
+.welcome
+{
+	-fx-text-fill:black;
+	-fx-font-size:35px;
+	-fx-font-family: "Trebuchet MS", Helvetica, sans-serif;
+}

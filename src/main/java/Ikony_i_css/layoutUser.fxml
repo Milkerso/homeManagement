@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1100.0" style="-fx-background-image: url(&quot;https://images84.fotosik.pl/961/5588a81a173aa3d8.jpg&quot;); -fx-background-size: auto; -fx-background-repeat: no-repeat; -fx-background-position: center;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logowanie.LayoutController">
+   <children>
+      <HBox layoutX="349.0" layoutY="108.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="385.0" prefWidth="746.0" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="185.0">
+         <children>
+            <Separator minWidth="-Infinity" orientation="VERTICAL" prefHeight="385.0" prefWidth="6.0" visible="false" />
+            <TabPane maxHeight="1.7976931348623157E308" maxWidth="Infinity" minHeight="350.0" prefHeight="385.0" prefWidth="220.0" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TabPane>
+            <Separator minWidth="-Infinity" orientation="VERTICAL" prefHeight="385.0" prefWidth="6.0" visible="false" />
+            <TabPane maxHeight="1.7976931348623157E308" maxWidth="Infinity" minHeight="350.0" prefHeight="385.0" prefWidth="220.0" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="53.0" prefHeight="55.0" prefWidth="1100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="addAward" contentDisplay="CENTER" graphicTextGap="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="55.0" prefWidth="330.0" stylesheets="@button.css" text="Nagrody" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ikony_i_css/Nagroda.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="usersButton" graphicTextGap="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="55.0" prefWidth="330.0" stylesheets="@button.css" text="Członkowie" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ikony_i_css/Czlonkowie.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="calendarButton" graphicTextGap="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="55.0" prefWidth="330.0" stylesheets="@button.css" text="Kalendarz" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ikony_i_css/kalendarz.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="helpButton" graphicTextGap="8.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="55.0" prefWidth="330.0" stylesheets="@button.css" text="Pomoc" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Ikony_i_css/pomoc.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="55.0" prefWidth="1000.0" style="-fx-background-color: #3C49FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="signOut" layoutX="1031.0" layoutY="7.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="63.0" stylesheets="@zaloguj.css" textAlignment="CENTER" AnchorPane.rightAnchor="6.0">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="947.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wyloguj.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="userLabel" cacheShape="false" centerShape="false" contentDisplay="CENTER" layoutX="834.0" layoutY="14.0" prefHeight="30.0" prefWidth="225.0" scaleShape="false" stylesheets="@zalogowanyJakoLabel.css" text="Zalogowany jako:" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="69.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Label>
+            <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ikony_i_css/poprzedni.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="54.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ikony_i_css/nastepny.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" layoutX="511.0" layoutY="5.0" prefHeight="47.0" prefWidth="78" AnchorPane.leftAnchor="511.0" AnchorPane.rightAnchor="511.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="78.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@przerobione.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="userLabel1" cacheShape="false" centerShape="false" contentDisplay="CENTER" layoutX="234.0" layoutY="13.0" prefHeight="33.0" prefWidth="51.0" scaleShape="false" stylesheets="@nagrodaLabel.css" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="275.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@business.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <SplitPane dividerPositions="0.431980906921241" layoutX="296.0" layoutY="85.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@splitPane.css" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="185.0">
+         <items>
+            <TabPane fx:id="tabs" maxHeight="1.7976931348623157E308" maxWidth="Infinity" minWidth="200.0" prefHeight="385.0" prefWidth="371.0" side="LEFT" stylesheets="@tabpane.css" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="plannedTasksTab">
+                  <content>
+                    <AnchorPane layoutX="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="378.0" prefWidth="263.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="275.0" stylesheets="@zadaniaDoWykonaniaLabel.css" text="Zadania do wykonania" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <ListView fx:id="plannedTasksListView" layoutX="1.0" layoutY="45.0" prefHeight="447.0" prefWidth="284.0" stylesheets="@list_view.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
+                                 </children></AnchorPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@DoWykonania.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                </Tab>
+                <Tab>
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane maxHeight="1.7976931348623157E308" prefHeight="361.0" prefWidth="260.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="284.0" stylesheets="@zadaniaDoWykonaniaLabel.css" text="Zadania w trakcie">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <ListView fx:id="nowTasksListView" prefHeight="200.0" prefWidth="200.0" stylesheets="@list_view.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
+                                 </children></AnchorPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@WTrakcie.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                </Tab>
+                  <Tab fx:id="completedTasksTab">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="378.0" prefWidth="263.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="284.0" stylesheets="@zadaniaDoWykonaniaLabel.css" text="Zadania wykonane">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <ListView fx:id="completedTasksListView" prefHeight="200.0" prefWidth="200.0" stylesheets="@list_view.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
+                                 </children></AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Wykonane.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" stylesheets="@grid_task.css">
+               <children>
+                  <GridPane layoutX="18.0" prefHeight="438.0" prefWidth="490.0" stylesheets="@grid_task.css" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.0" minWidth="80.0" prefWidth="124.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="348.0" />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="55.0" minHeight="10.0" percentHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="46.0" minHeight="10.0" percentHeight="0.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="45.0" minHeight="10.0" percentHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="56.0" minHeight="10.0" percentHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="62.0" minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="243.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="descriptionLabel" stylesheets="@label_task.css" text="Opis: " GridPane.rowIndex="1">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="yangLabel" stylesheets="@label_task.css" text="Punkty: " GridPane.rowIndex="2">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="commentLabel" stylesheets="@label_task.css" text="Komentarz: " GridPane.columnSpan="2" GridPane.rowIndex="3">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="taskNameLabel" style="-fx-text-fill: #0022ca;" stylesheets="@label_task2.css" GridPane.columnSpan="2">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="taskDescriptionLabel" stylesheets="@label_task1.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="taskYangLabel" stylesheets="@label_task1.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="taskCommentLabel" stylesheets="@label_task1.css" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <ButtonBar prefHeight="66.0" prefWidth="501.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="7.0">
+                    <buttons>
+                        <Button fx:id="completeTaskButton" mnemonicParsing="false" prefHeight="40.0" stylesheets="@button_task.css" text="Wykonaj" />
+                      <Button fx:id="addTaskButton" disable="true" mnemonicParsing="false" prefHeight="41.0" prefWidth="154.0" stylesheets="@nieczynnyB.css" text="Dodaj">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Button>
+                        <Button fx:id="editTaskButton" disable="true" mnemonicParsing="false" prefHeight="40.0" stylesheets="@nieczynnyB.css" text="Edytuj" />
+                        <Button fx:id="deleteTaskButton" disable="true" mnemonicParsing="false" prefHeight="40.0" stylesheets="@nieczynnyB.css" text="Usuń" />
+                    </buttons>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

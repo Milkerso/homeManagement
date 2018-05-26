@@ -1,0 +1,100 @@
+.root
+{
+	-fx-background-color:#6277FF;
+}
+.button1
+{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+ 
+ }
+ .button
+{
+    -fx-background-color: transparent;
+   
+ 
+ }
+.monthlabel
+{
+	-fx-font-size: 21pt;
+	-fx-text-fill: white;
+	-fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+	-fx-font-weight:bold;
+}
+
+.time-slot {
+	-fx-background-color: #005fbf, white;/*kolor tla okienek */
+	-fx-background-insets: 0, 2 1 0 1 ;
+}
+
+.time-slot:selected {
+	/*-fx-background-color: #5EB8FD ;*/
+	-fx-background-color:
+		white,
+	    linear-gradient(#6277FF, /*#d2eaef,*/ #6277FF);
+	-fx-background-insets: 0, 1;
+	-fx-padding:0;
+}
+.label-tygodni
+{
+	-fx-font-size:20px;
+	-fx-text-fill:white;
+	-fx-padding: 0 15 0 0;
+	-fx-font-weight: bold;
+}
+
+.day-number {
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #003265;
+	-fx-padding: 2 4;
+}
+
+.day-number-other {/*szare cyferki kalendarza*/
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #525252;
+	-fx-padding: 2 4;
+}
+.task-pane {
+	-fx-font-size:15px;
+	-fx-background-color: yellow; 
+}
+.task-pane0 {
+	-fx-font-size:15px;
+	-fx-background-color: #FF5555; 	
+}
+.task-pane2{
+	-fx-font-size:15px;
+	-fx-background-color:lightgreen; 
+}
+
+.task-pane .label {
+	-fx-padding: 1;
+}
+
+.task-pane-info {
+	-fx-background-color: #9fdef2; 
+}
+
+.task-pane-info .label {
+	-fx-padding: 1;
+}
+
+/* Week number on the left of the table */
+/*
+.week-header {
+	-fx-background-color: #4998D4;
+	
+}
+
+.week-header .label {
+	-fx-text-fill: white;
+} */
+
+/* Day */
+/* .day-header {
+	-fx-background-color: #4998D4;
+	-fx-alignment: center;
+}
+*/

@@ -1,0 +1,9 @@
+50.png
+bilety.png
+burger.png
+cyrk.png
+gra.png
+pilka.png
+przenet.png
+samolot.png
+telefon.png

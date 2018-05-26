@@ -1,0 +1,8 @@
+.label
+{
+	-fx-text-fill: white;
+	-fx-border-width: 0 0 3 0;
+	-fx-border-color:#0011A6;
+	-fx-padding: 0 0 0 15;
+	-fx-font-size: 1.5em;
+}

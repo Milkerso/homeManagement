@@ -1,0 +1,19 @@
+.button
+{
+	-fx-padding: 5 22 5 22;   
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #013179;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: white;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-cursor:hand;
+}
+.button:hover
+{
+	-fx-border-color: #001C46;
+	-fx-background-color:white;
+	-fx-text-fill: #001C46;
+}
